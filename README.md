@@ -12,5 +12,8 @@ To use this scheduler, simply click on the box corresponding to the hour you wan
 
 ![Screenshot showing the page](./Assets/images/screenshot.png)
 
+## Credits
+
+In the js file, I recieved help from AskBCS Learning Assistants in the function fillTimeTable and the function saveSchedule. 
 
 
