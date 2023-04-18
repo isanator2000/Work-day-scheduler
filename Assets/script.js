@@ -5,13 +5,8 @@ var currentHrs = moment().format('H');
 var timeTable;
 var currentTime;
 
+function showcurrentDay() {
+  var today = moment().format("dddd, MMMM Do, HH:mm A");
+  $('#currentDay').text(today);
+}
 
-
-
-
-
-
-
-$(function () {
-
-});
