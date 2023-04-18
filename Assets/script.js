@@ -14,7 +14,7 @@ function fillTimeTable() {
 
   for (var hour = 0; hour < totalHrs; hour++) { 
       var actHour = hour + 8;
-      timeTable = hourBeginning.add(1,'h').format('HH:mm A');
+      timeTable = hrsStart.add(1,'h').format('HH:mm A');
       if (currentHrs == actHour) {
           currentTime = 'present';
       } else if (currentHrs < actHour) {
