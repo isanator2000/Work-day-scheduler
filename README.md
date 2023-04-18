@@ -10,7 +10,7 @@ To use this scheduler, simply click on the box corresponding to the hour you wan
 
 ## Screenshot 
 
-![Screenshot showing the page](./assets/images/)
+![Screenshot showing the page](./assets/images/screenshot.png)
 
 
 
