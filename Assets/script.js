@@ -12,7 +12,7 @@ function showcurrentDay() {
 
 function fillTimeTable() {
 
-  for (var hour = 0; hour < totalHours; hour++) { 
+  for (var hour = 0; hour < totalHrs; hour++) { 
       var actHour = hour + 8;
       timeTable = hourBeginning.add(1,'h').format('HH:mm A');
       if (currentHrs == actHour) {
@@ -33,8 +33,25 @@ function fillTimeTable() {
       </div>`;
 
   $(".container").append(appendedText);
+  }
+      showSchedule();
+  }
 
-}
+          function saveSchedule() {
 
-loadSchedule();
-}
+            var Name = $(this).parent().attr('id');
+            var Value = $(this).parent().children().eq(1).val();
+
+            localStorage.setItem(Name, Value);
+          }
+
+          function showSchedule() {
+
+            for (var hour = 0; hour < totalHrs; hour++) {
+                var actHour = hour + 8;
+                var schedule = localStorage.getItem(`hour-${actHour}`);
+
+                $(`.${actHour}`).val(schedule);
+            }
+
+          }
