@@ -1,6 +1,6 @@
 // global variables
 var hrsStart = moment().startOf('day').add(7,'h');
-var totalHrs = 10;
+var totalHrs = 11;
 var currentHrs = moment().format('H');
 var timeTable;
 var currentTime;
