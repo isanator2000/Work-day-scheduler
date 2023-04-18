@@ -55,3 +55,15 @@ function fillTimeTable() {
             }
 
           }
+
+showcurrentDay();
+fillTimeTable();
+$('.saveBtn').on('click', saveSchedule);
+
+setInterval(function() {
+    showcurrentDay();
+}, 60000);
+
+setInterval(function() {
+    fillTimeTable();
+}, 600000);
